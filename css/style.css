@@ -766,23 +766,17 @@ input:-ms-input-placeholder { /* IE 10+ */
 
 span.left {
     position: absolute;
-    color: white;
-    font-size: 55px;
-    font-family: "Cuprum bold";
     left: -186px;
     bottom: 76px;
-    text-transform: uppercase;
+   
 
 }
 
 span.right {
     position: absolute;
-    color: white;
-    font-size: 55px;
     left: 366px;
     bottom: 76px;
-    font-family: "Cuprum bold";
-    text-transform: uppercase;
+   
 }
 
 #botn-1:checked~.slides .slide:nth-child(1) {
@@ -1281,7 +1275,7 @@ span.right {
 }
 
 .s-slide:nth-child(3) {
-    background-image: url("../img/kredit.png.");
+    background-image: url("../img/kredit.png");
     background-repeat: no-repeat;
     background-position: 100% 10px;
 }
