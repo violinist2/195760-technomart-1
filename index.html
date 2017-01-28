@@ -3,83 +3,57 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Техномарт-Интернет магазин строительных материалов</title>
+    <title>Техномарт-Интернет магазин строительных материалов>
+    </title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--хедер-->
-    <header class="header">
-        <!--первая часть хедера-->
+    <header>
         <div class="search-bookmarks">
-            <!--центровщик-->
             <div class="container clearfix">
-                <a class="logo-techmart" href="#">Техномарт</a>
-                    <form class="formline" action="#" method="post">
-                        <label for="search">Поиск:</label>
-                        <input type="search" class="input-formline" id="search" name="search" placeholder="Поиск:">
-                        <!-- <button type="submit">Искать</button>-->
-                    </form>
+                <a class="logo-techmart">Техномарт</a>
+                <form class="formline" action="#" method="get">
+                    <label for="search"></label>
+                    <input type="search" class="input-formline" id="search" name="search" placeholder="Поиск:">
+                </form>
                 <div class="bookmark">
-                    <a class="nav-line-links" href="#">Закладки: 0</a>
+                    <a class="nav-line-links" href="#">Закладки: <span>0</span></a>
                 </div>
                 <div class="basket">
-                    <a class="nav-line-links" href="#">Корзина: 0</a>
+                    <a class="nav-line-links" href="#">Корзина: <span>0</span></a>
                 </div>
                 <div class="checkout">
                     <a class="nav-line-links" href="#">Оформить заказ</a>
                 </div>
             </div>
         </div>
-        <!--секция хедера-->
         <section class="header-low">
-            <!--центровщик второй части хедера-->
             <div class="container clearfix">
-                <!--блок с заголовком тел регистрацией-->
-                <!--<div class="header-light-block">-->
                 <div class="header-left-block clearfix">
                     <h1 class="header-text">Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
-                    <div class="phone">
-                        +7 (812) 555-05-55
+                    <div class="phone">+7 (812) 555-05-55
                     </div>
                     <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </div>
                 </div>
                 <div class="user-block">
-                    <!--блок для незарегистрированного пользователя-->
                     <a class="enter" href="#">Войти</a>
-                    <!--</div> -->
-                    <!--<div class="enter-registration">-->
                     <a class="registration" href="#">Регистрация</a>
-                  <!--<div class="account-name account-disabled">
-            <a class="user" href="#">
-              <span class="account-username">Равшан Джамшутович</span>
-            </a>
-            <a class="logout" href="#exit"></a>
-          </div>
-          <div class="account-link account-disabled">
-            <a href="#">Мои заказы</a> &bull;
-            <a href="#">Личный кабинет</a>
-</div>-->
-                
-                
-                
-                
                 </div>
-            </div>
             </div>
             <div class="container clearfix">
                 <nav class="main-menu clearfix">
                     <ul class="nav-menu">
                         <li>
-                            <a class="header-nav" href="#">Главная</a>
+                            <a class="header-nav">Главная</a>
                         </li>
                         <li>
                             <a class="header-nav" href="#">Компания</a>
                         </li>
                         <li>
-                            <a class="header-nav" href="#">Каталог</a>
+                            <a class="header-nav" href="catalog.html">Каталог</a>
                         </li>
                         <li>
                             <a class="header-nav" href="#">Новости</a>
@@ -104,7 +78,8 @@
                 <div class="up-promo clearfix">
                     <div class="content-block-a">
                         <p class="items-name">Материалы</p>
-                        <div class="badge-new"></div>
+                        <div class="badge-new">
+                        </div>
                         <a class="color-links" href="#">На любой вкус</a>
                     </div>
                     <div class="content-block-b">
@@ -121,14 +96,13 @@
                         <input type="radio" id="botn-1" name="f-controls" checked>
                         <input type="radio" id="botn-2" name="f-controls">
                         <div class="slider-controls">
-                            <label for="botn-1"><span class="left"><img src="img/.icon-left.png" width="22" height="40" alt="left"</span></label>
-                            <label for="botn-2"><span class="right"><img src="img/.icon-right.png" width="22" height="40" alt="right"</span></label>
+                            <label for="botn-1"><span class="left"><img src="img/.icon-left.png" width="22" height="40" alt="<"></span></label>
+                            <label for="botn-2"><span class="right"><img src="img/.icon-right.png" width="22" height="40" alt=">"></span></label>
                         </div>
                         <div class="slides">
                             <div class="slide">
                                 <h2 class="slide-title">Перфораторы</h2>
-                                <p class="slide-text">Настроящие мужские игрушки</p>
-                                <!--слово настроящие в макете так и задуманно?-->
+                                <p class="slide-text">Наcтоящие мужские игрушки</p>
                                 <a class="open-catalog" href="#">Открыть каталог</a>
                             </div>
                             <div class="slide">
@@ -141,7 +115,6 @@
                     <div class="down-promo-right">
                         <div class="content-block-d">
                             <p class="items-name">Скидки 50%</p>
-                            <!--&nbsp-->
                             <a class="color-links" href="#">На 350 товаров</a>
                         </div>
                         <div class="content-block-e">
@@ -161,7 +134,8 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="buy-bookmarks" href="#">В закладки</a>
                     </div>
-                    <div class="item-image"><img class="perforator" src="img/9000.jpg" width="184" height="164" alt="Перфоратор">
+                    <div class="item-image">
+                        <img class="perforator" src="img/9000.jpg" width="184" height="164" alt="Перфоратор">
                     </div>
                     <div class="item-title">Перфоратор BOSCH BFG 9000
                     </div>
@@ -175,7 +149,8 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="buy-bookmarks" href="#">В закладки</a>
                     </div>
-                    <div class="item-image"><img class="perforator two" src="img/3000.png" width="127" height="112" alt="Перфоратор">
+                    <div class="item-image">
+                        <img class="perforator two" src="img/3000.png" width="127" height="112" alt="Перфоратор">
                     </div>
                     <div class="item-title">Перфоратор BOSCH BFG 3000
                     </div>
@@ -189,7 +164,8 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="buy-bookmarks" href="#">В закладки</a>
                     </div>
-                    <div class="item-image"><img class="perforator three" src="img/6000.jpg" width="144" height="128" alt="Перфоратор">
+                    <div class="item-image">
+                        <img class="perforator three" src="img/6000.jpg" width="144" height="128" alt="Перфоратор">
                     </div>
                     <div class="item-title">Перфоратор BOSCH BFG 6000
                     </div>
@@ -205,7 +181,8 @@
                         <a class="buy" href="#">Купить</a>
                         <a class="buy-bookmarks" href="#">В закладки</a>
                     </div>
-                    <div class="item-image"><img class="perforator four" src="img/2000.jpg" width="127" height="112" alt="Перфоратор">
+                    <div class="item-image">
+                        <img class="perforator four" src="img/2000.jpg" width="127" height="112" alt="Перфоратор">
                     </div>
                     <div class="item-title">Перфоратор BOSCH BFG 2000
                     </div>
@@ -214,7 +191,6 @@
                 </div>
             </div>
         </div>
-        <!--следующий такой же блок поп производители+бренды-->
         <div class="container clearfix">
             <div class="popular-products">
                 <h2 class="main-pop-products">Популярные производители:</h2>
@@ -230,7 +206,7 @@
                 <a class="brand-badge-3" href="#"><img src="img/DeWALT.png " width="146" height="44" alt="DeWalt"></a>
             </div>
             <div class="brands">
-                <a class="brand-badge-4" href="#"><img src="img/Интерскол.png" width="200" height="88" alt="Интерскол"></a>
+                <a class="brand-badge-4" href="#"><img src="img/Interskol.png" width="200" height="88" alt="Интерскол"></a>
             </div>
             <div class="brands">
                 <a class="brand-badge-5" href="#"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></a>
@@ -248,7 +224,7 @@
         <section class="services">
             <div class="container clearfix">
                 <h3 class="h-down">Сервисы</h3>
-                <p class="pre-slider">Хороший интернет-магазин отличается от прохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать
+                <p class="pre-slider">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать
                     ваши покупки приятными.</p>
                 <div class="s-slider">
                     <input type="radio" id="btn-1" name="controls" checked>
@@ -273,7 +249,7 @@
                                 <div class="title-s-slide">Гарантия
                                 </div>
                                 <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
-                                    его возгоранием,<br>вы всегда можете быть уверенны в нашей гарантии. Мы обменяем сгоревший
+                                    его возгоранием,<br>вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
                                     товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
                             </div>
                         </div>
@@ -281,32 +257,33 @@
                             <div class="s-slide-text">
                                 <div class="title-s-slide">Кредит
                                 </div>
-                                <p>Залезть в долговую яму стало проще!<br> Кредитные консультатны придут вам на помощь.</p>
+                                <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
                                 <a class="credit-a" href="#">Отправить заявку</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="maps">
             <div class="container clearfix">
                 <div class="section-technomart">
-                    <h3 class="h-down">Компания &laquo;Техномарт&raquo;</h3>
-                    <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-                        равнодушными любителей сэкономить на гастарбайтерах.</p>
-                    <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со мнoгими транспортными
-                        компаниями:
-                    </p>
-                    <ul>
-                        <li class="shipping">Деловые линии</li>
-                        <li class="shipping">Автотрейдинг</li>
-                        <li class="shipping">ЖелДорЭкспедиция</li>
-                    </ul>
-                    <a class="btn" href="#">Подробнее о компании</a>
+                    <h2 class="h-down">Компания &laquo;Техномарт&raquo;</h2>
+                        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не
+                            оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со мнoгими транспортными
+                            компаниями:
+                        </p>
+                        <ul>
+                            <li class="shipping">Деловые линии</li>
+                            <li class="shipping">Автотрейдинг</li>
+                            <li class="shipping">ЖелДорЭкспедиция</li>
+                        </ul>
+                        <a class="btn" href="#">Подробнее о компании</a>
                 </div>
                 <div class="section-map">
                     <h3 class="h-down">Контакты</h3>
-                    <p>Вы можете забрать товар сами, заехав к нам в офис:</p>
+                    <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                     <a href="#"><img src="img/map.png" width="300" height="158" alt="Карта проезда"></a>
                     <a class="btn-feedback" href="#">Заблудились? Напишите нам!</a>
                 </div>
@@ -315,10 +292,9 @@
     </main>
     <footer class="main-footer">
         <div class="blue-back">
-            <!--синий бекграунд1-->
             <div class="container clearfix">
                 <div class="logo-low">
-                    <a class="logo-techmart" href="#">Техномарт</a>
+                    <a class="logo-techmart">Техномарт</a>
                 </div>
                 <nav class="low-menu-1">
                     <ul class="low-list-1">
@@ -329,7 +305,7 @@
                             <a href="#">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Каталог</a>
+                            <a href="catalog.html">Каталог</a>
                         </li>
                         <li>
                             <a href="#">Доставка</a>
@@ -342,8 +318,7 @@
             </div>
             <div class="low-nav2">
                 <div class="container clearfix">
-                    <div class="footer-contacts">
-                        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
+                    <div class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
                     </div>
                     <nav class="low-menu-2">
                         <ul class="low-list-2">
@@ -360,14 +335,14 @@
                                 <a href="#">Спецпредложения</a>
                             </li>
                         </ul>
-                     </nav>    
+                    </nav>
                 </div>
             </div>
         </div>
         <section class="footer-social">
             <div class="container clearfix">
                 <div class="copyright">
-                    <p>&#169; 2010&ndash;2016 Компания &laquo;Техномарт&raquo; все права защищены</p>
+                    <p>&#169; 2010&ndash;2016 Компания &laquo;Техномарт&raquo; Все права защищены</p>
                 </div>
                 <div class="social">
                     <a class="social-btn sprite-icon-vk" href="https://vk.com"></a>
@@ -385,6 +360,7 @@
             </div>
         </section>
     </footer>
+    <!--здесь будут модальные окна, не доделала ещё-->
 </body>
 
 </html>
