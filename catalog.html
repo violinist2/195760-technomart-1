@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Техномарт-Интернет магазин строительных материалов</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,8 +21,8 @@
                 <div class="bookmark">
                     <a class="nav-line-links" href="#">Закладки: <span>0</span></a>
                 </div>
-                <div class="basket">
-                    <a class="nav-line-links" href="#">Корзина: <span>0</span></a>
+                <div class="basket red">
+                    <a class="nav-line-links" href="#">Корзина: <span>10</span></a>
                 </div>
                 <div class="checkout">
                     <a class="nav-line-links" href="#">Оформить заказ</a>
@@ -39,18 +40,17 @@
                 </div>
                 <div class="user-block">
                     <div class="user">
-                        <a href="#" class="user-profile"></a>
-                        <div class="user-name">Равшан Джамшутович
-                        </div>
+                        <a class="user-name" href="#">Равшан Джамшутович</a>
+                        <a class="sign-out" href="#"></a>
                     </div>
-                    <div class="user-menu">
-                        <a class="user-order" href="#">Мои заказы</a>
-                        <a class="user-cabinet" href="#">Личный кабинет</a>
-                    </div>
-                    <div class="user-registration">
-                        <a href="#" class="sign-in">Войти</a>
-                        <a href="#" class="sign-up">Регистрация</a>
-                    </div>
+                </div>
+                <div class="user-menu">
+                    <a class="user-order" href="#">Мои заказы</a>
+                    <a class="user-cabinet" href="#">Личный кабинет</a>
+                </div>
+                <div class="user-registration">
+                    <a href="#" class="sign-in">Войти</a>
+                    <a href="#" class="sign-up">Регистрация</a>
                 </div>
             </div>
             <div class="container clearfix">
@@ -85,11 +85,11 @@
     <main>
         <div class="container clearfix">
             <div class="catalog-breadcrumbs">
-                <ul class="breadcrumbs">                    
+                <ul class="breadcrumbs">
                     <li class="breadcrumbs house">
-                        <a class="breadcrumbs-after" href="index.html"></a> 
+                        <a class="breadcrumbs-after" href="index.html"></a>
                     </li>
-                    <li>  
+                    <li>
                         <a class="breadcrumbs-1" href="#">Каталог</a>
                     </li>
                     <li>
@@ -111,51 +111,54 @@
                 <div class="filter">
                     <p>Фильтр:</p>
                 </div>
-                <form class="catalog-form" action="form.php" method="get">
+                <form class="catalog-form" action="#" method="get">
                     <div class="price-left-column">Цена:
                     </div>
-                    <div class="slider-price">
-                        <label>
-                            <input class="scale" type="range" min="0" max="30000" step="1">
-                        </label>
-                    </div>
-                    <div class="one-field">
-                        <label>
-                            <input type="number" min="1" max="3000" value="0">
-                        </label>
-                    </div>
-                    <p class="tire">-</p>
-                    <div class="two-field">
-                        <label>
-                            <input type="number" min="0" max="3000" value="3000">
-                        </label>
+                    <div class="range-filter">
+                        <div class="range-controls"></div>
+                        <div class="scale">
+                            <div class="bar">
+                            </div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                        <div class="slider-price clearfix">
+                            <label><input  class="price-field" name="min-price" type="text" value="0"></label>
+                            <div class="delimiter"></div>
+                            <label><input class="price-field right-field" name="max-price" type="text" value="30000"></label>
+                        </div>
                     </div>
                     <div class="form-block">
-                        <h3 class="form-block-title">Производители</h3>
-                        <label>
-                            <input class="input-checkbox" type="checkbox" name="Bosch" checked>Bosch
-                        </label>
-                        <label>
-                            <input class="input-checkbox" type="checkbox" name="Interckol">Интерскол
-                        </label>
-                        <label>
-                            <input class="input-checkbox" type="checkbox" name="Makita" checked>Makita
-                        </label>
-                        <label>
-                            <input class="input-checkbox" type="checkbox" name="Dewalt">Dewalt
-                        </label>
-                        <label>
-                            <input class="input-checkbox" type="checkbox" name="Hitachi">Hitachi
-                        </label>
+                        <h3 class="form-block-title">Производители:</h3>
+                        <ul class="brand-form-block">
+                            <li>
+                                <input class="input-form-block" type="checkbox" name="Bosch" id="brand-1" checked><label
+                                    for="brand-1">Bosch</label>
+                            </li>
+                            <li>
+                                <input class="input-form-block" type="checkbox" name="Interckol" id="brand-2"><label for="brand-2">Интерскол</label>
+                            </li>
+                            <li>
+                                <input class="input-form-block" type="checkbox" name="Makita" id="brand-3" checked><label for="brand-3">Makita</label>
+                            </li>
+                            <li>
+                                <input class="input-form-block" type="checkbox" name="Dewalt" id="brand-4"><label for="brand-4">Dewalt</label>
+                            </li>
+                            <li>
+                                <input class="input-form-block" type="checkbox" name="Hitachi" id="brand-5"><label for="brand-5">Hitachi</label>
+                            </li>
+                        </ul>
                     </div>
                     <div class="form-block">
                         <h3 class="form-block-title">Питание:</h3>
-                        <label>
-                            <input type="radio" name="option" value="Akkumulyatornie">Аккумуляторные
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="Setevie" checked>Сетевые
-                        </label>
+                        <ul class="power-form-block">
+                            <li>
+                                <input class="input-power" type="radio" name="option" id="power-1" checked><label class="power-label" for="power-1">Аккумуляторные</label>
+                            </li>
+                            <li>
+                                <input class="input-power" type="radio" name="option" id="power-2"><label class="power-label" for="power-2">Сетевые</label>
+                            </li>
+                        </ul>
                     </div>
                     <input class="input-show" type="submit" value="Показать">
                 </form>
@@ -329,7 +332,7 @@
             </div>
         </div>
         <section class="about">
-            <div class="container">
+            <div class="container clearfix">
                 <h2 class="h-down about-title">Пара слов о перфораторах</h2>
                 <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
                     бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут
@@ -408,6 +411,16 @@
             </div>
         </section>
     </footer>
+    <div class="pop-up-basket">
+        <button class="pop-up-basket-close" type="button" title="Закрыть">Закрыть</button>
+        <div class="pop-up-order">
+            <p class="pop-up-message">Товар добавлен в корзину!</p>
+        </div>
+        <div class="pop-up-grey">
+            <a href="#" class="link-main-pop-products order">Оформить заказ</a>
+            <a href="#" class="link-main-pop-products continue">Продолжить покупки</a>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Техномарт-Интернет магазин строительных материалов>
+    <title>Техномарт-Интернет магазин строительных материалов
     </title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="css/normalize.css">при подключении нормалайза у части хедера идет расхождение с перфект пикселем на 12 px что это и надо ли это поправлять?-->
+    <link  rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <div class="container clearfix">
                 <a class="logo-techmart">Техномарт</a>
                 <form class="formline" action="#" method="get">
-                    <label for="search"></label>
+                    <label for="search">Поиск</label>
                     <input type="search" class="input-formline" id="search" name="search" placeholder="Поиск:">
                 </form>
                 <div class="bookmark">
@@ -360,7 +361,36 @@
             </div>
         </section>
     </footer>
-    <!--здесь будут модальные окна, не доделала ещё-->
+    <!--модальные окна-->
+    <div class="pop-up-basket">
+        <button class="pop-up-basket-close" type="button" title="Закрыть">Закрыть</button>
+        <div class="pop-up-order">
+            <p class="pop-up-message">Товар добавлен в корзину!</p>
+        </div>
+        <div class="pop-up-grey">
+            <a href="#" class="link-main-pop-products order">Оформить заказ</a>
+            <a href="#" class="link-main-pop-products continue">Продолжить покупки</a>
+        </div>
+    </div>
+    <form class="pop-up-letter clearfix" action="https://echo.htmlacademy.ru" method="get">
+        <button class="pop-up-basket-close" type="button" title="Закрыть">Закрыть</button>
+        <div class="name-field">
+            <label for="name">Ваше имя:</label> 
+            <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+         </div>    
+        <div class="email-field">  
+            <label for="mail">Ваш e-mail:</label> 
+            <input type="email" id="mail" name="email" required placeholder="Для отправки ответа">
+        </div>  
+        <div class="letter-text">
+            <label for="letter">Текст письма:</label> 
+            <textarea type="text" id="letter" name="letter" placeholder="В свободной форме"></textarea>
+        </div>
+        <div class="pop-up-submit">
+            <button type="submit" class="link-main-pop-products pop-up-btn">Отправить</button>
+        </div>
+    </form>   
+
 </body>
 
 </html>
