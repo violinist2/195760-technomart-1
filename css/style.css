@@ -77,10 +77,10 @@ header {
     left:16px;
     width: 17px;
     height: 17px;
-    background-image: url("../img/.icon-search-white.png");
+    background-image: url("../img/sprite.png");
     display: inline-block;
     opacity:0.4;
-
+    background-position: -77px -302px;
 }
 
 
@@ -123,7 +123,7 @@ basket:hover {
 .formline:hover {
     background: #212a3a;
     border: white 0px;
-
+    
 }
 
 .formline:hover .input-formline {
@@ -136,7 +136,7 @@ basket:hover {
 .input-formline :hover {
     background: #212a3a;
     border: white 0px;
-
+    
 }
 
 .formline:hover::before {
@@ -148,7 +148,7 @@ basket:hover {
 .formline :focus {
     width: 270px;
     color:black;
-    background: #ffffff url("../img/.icon-search-red.png") no-repeat 20px 12px;
+    background: #ffffff url("../img/search-red.png") no-repeat 20px 12px;
     display: block;
     height: 42px;
     margin: 0px;
@@ -157,34 +157,29 @@ basket:hover {
     height: 42px;
     top:0px;
     padding-left: 48px;
-}
 
+}
 .formline .input-formline:focus {
-    background: #ffffff url("../img/.icon-search-red.png") no-repeat 20px 12px;
+    background: #ffffff url("../img/search-red.png") no-repeat 20px 12px;
     border: white 0px;
-}
-/*... закончилась*/
 
+}
 .bookmark::before {
     content: "";
     width: 14px;
     height: 16px;
-    /*background-position: -32px -5px;*/
-    background-image: url("../img/.icon-bookmark-white.png");
+    background-position: -77px -20px;
+    background-image: url("../img/sprite.png");
     display: inline-block;
-    position:absolute;
-    left:18px;
-    opacity:0.3;
+    position: absolute;
+    left: 18px;
+    opacity: 0.3;
+
 }
-
-
-
 .bookmark:hover::before {
     opacity:1;
 
 }
-
-
 .nav-line-links {
     /*общий класс ссылок верхней плашки*/
     font-size: 17px;
@@ -234,8 +229,8 @@ basket:hover {
     left:17px;
     width: 17px;
     height: 16px;
-    /*background-position: -5px -5px;*/
-    background-image: url("../img/.icon-basket-white.png");
+    background-image: url("../img/sprite.png");
+    background-position: -20px -20px;
     display:inline-block;
     opacity:0.3;
 }
@@ -269,7 +264,7 @@ basket:hover {
     width: 621px;
     float: left;
     padding-top: 25px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .clearfix::after {
@@ -314,38 +309,41 @@ basket:hover {
     line-height: 18px;
     width: 19px;
     height: 19px;
-    background: url("../img/.icon-phone.png") no-repeat;
+    background: url("../img/sprite.png");
     top: 10px;
     left: 12px;
-    
+    background-position: -264px -191px;
 }
 
 .address {
     color: #32425c;
     margin-right: 41px;
-    width: 250px;
+    width: 251px;
     padding-top: 4px;
     float: right;
+    line-height:24px;
+    
 }
 
 .enter::before {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 20px;
     height: 17px;
-    background-position: -32px -33px;
-    background-image: url("../img/sprite-chrome.png");
+    background-position: -204px -215px;
+    background-image: url("../img/sprite.png");
     top:14px;
     left: 14px;
 }
 .enter:hover::before {
     content: "";
     position: absolute;
-    background: url("../img/.icon-login-blue.png") no-repeat;
-    width: 30px;
+    background: url("../img/sprite.png");
+    width: 20px;
     height: 17px;
     top:14px;
     left: 14px;
+    background-position: -261px -20px;
 }
 .enter {
     /*a класс*/
@@ -378,16 +376,15 @@ basket:hover {
 .enter:active::before {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 20px;
     height: 17px;
-    background-position: -32px -33px;
-    background-image: url("../img/sprite-chrome.png");
+    background-position: -204px -215px;
+    background-image: url("../img/sprite.png");
     top:14px;
     left: 14px;
 }
 
 .registration {
-    /*a класс*/
     font-size: 21px;
     color: black;
     background: white;
@@ -612,8 +609,6 @@ basket:hover {
 .content-block-e a {
     background: #dda028;
     margin-left: 23px;
-    /*margin-top: 5px;
-    padding-top: 8px;*/
     
 }
 
@@ -664,7 +659,7 @@ basket:hover {
 }
 
 .up-promo {
-    padding-top: 58px;
+    padding-top: 59px;
 }
 
 .slider {
@@ -844,7 +839,7 @@ span.right {
     /*дрели стилизация*/
     width: 940px;
     margin: 0px auto;
-    
+    /*font-size:0px;*/
 }
 
 .item {
@@ -859,7 +854,7 @@ span.right {
     /*vertical-align: top;*/
     /*font-size: 16px;*/
     line-height: 20px;
- 
+    /*box-sizing:border-box;*/
 }
 
 .item:hover {
@@ -968,16 +963,14 @@ span.right {
 .item .actions .buy::before {
     content:"";
     position: absolute;
-    /*left:0px;*/
     width: 17px;
     height: 16px;
-    /*background-position: -0px -0px;*/
-    background: url("../img/.icon-basket-white.png") no-repeat;
+    background-position: -20px -20px;
+    background-image: url("../img/sprite.png");
     opacity:0.3;
     top: 50px;
-    left: 52px;
-    
-    
+    left: 52px;    
+
 }
 .item .actions .buy:hover {
     background-color:#5fbb2d;
@@ -1053,9 +1046,9 @@ span.right {
 
 .item .price {
     position: relative;
-    width: 80px; 
+    width: 81px; 
     margin: -7px auto;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     padding: 10px 30px;
     padding-left: 30px;
     margin-left: 5px;
@@ -1067,6 +1060,8 @@ span.right {
     font-family: "PT Sans";
     font-weight: bold;
     cursor: pointer;
+    text-transform:uppercase;
+    line-height:18px;
 }
 
 .item .price:after {
@@ -1076,7 +1071,7 @@ span.right {
     right: -20px;
     width: 0;
     height: 0;
-    border: 20px solid white;
+    border: 19px solid white;
     border-left-color: #ee3643;
 }
 
@@ -1474,6 +1469,7 @@ label:hover {
     margin-top: 18px;
     margin-bottom: 0px;
     padding-left: 0px;
+   
 }
 
 .shipping {
@@ -1486,12 +1482,14 @@ label:hover {
 
 .shipping::before {
     content: "";
-    background: url("../img/line.png") no-repeat;
+    background: url("../img/sprite.png") no-repeat;
     width: 25px;
     height: 2px;
     margin-bottom: 4px;
     margin-right: 10px;
     display: inline-block;
+    background-position: -139px -215px;
+
 }
 
 
@@ -1531,7 +1529,7 @@ label:hover {
 .footer-contacts {
     font-size: 18px;
     color: white;
-    width: 322px;
+    width: 325px;
     float: left;
     margin-top: 32px;
     margin-bottom: 50px;
@@ -1623,39 +1621,43 @@ label:hover {
 
 .social {
     float:left;
-/*margin:30px;*/
     width: 150px;
     margin-top: 35px;
     margin-right:100px;
+    
 }
 .social-btn {
     display: inline-block;
     width: 42px;
     height: 42px;
-    /*background: #212a3a;*/
+    background: #212a3a;
     border-radius: 50%;
-    vertical-align: middle;
-   
-}
+    vertical-align: middle; 
+    position: relative;
 
+
+}
 
 .sprite-icon-vk {
-    background: #212a3a url("../img/.icon-vk.png") 10px 15px no-repeat;
-}
+    background: #212a3a url("../img/sprite.png") -244px -287px no-repeat;
+    
+    }
+
 .sprite-icon-vk:hover {
-    background: #ee3643 url("../img/.icon-vk.png") 10px 15px no-repeat;
+    background: #ee3643 url("../img/sprite.png") -244px -287px no-repeat;
+ 
 }
 .sprite-icon-facebook {
-    background: #212a3a url("../img/.icon-facebook.png") 15px 11px no-repeat;
+    background: #212a3a url("../img/sprite.png") -134px -73px no-repeat;
 }
 .sprite-icon-facebook:hover {
-    background: #ee3643 url("../img/.icon-facebook.png") 15px 11px no-repeat;
+    background: #ee3643 url("../img/sprite.png") -134px -73px no-repeat;
 }
 .sprite-icon-instagramm {
-    background: #212a3a url("../img/.icon-instagramm.png") 13px 12px no-repeat;
+    background: #212a3a url("../img/sprite.png") -69px -204px no-repeat;
 }
 .sprite-icon-instagramm:hover {
-    background: #ee3643 url("../img/.icon-instagramm.png") 13px 12px no-repeat;
+    background: #ee3643 url("../img/sprite.png") -69px -204px no-repeat;
 }
 
 .copyright {
@@ -1676,9 +1678,8 @@ label:hover {
     float:left;
     margin-top: 19px;
     margin-right: 0px;
-/*margin-right: 0px;*/
     margin-left: 0px;
-
+    line-height:18px;
 }
 
 .end {
@@ -1707,7 +1708,7 @@ label:hover {
 .developer a {
     color: #ffd180;
     text-decoration: none;
-    
+   
 }
 
 .developer a:hover {
@@ -1734,45 +1735,63 @@ label:hover {
 .user {
     width: 299px;
     background:white;
-    margin-top:25px;
+    margin-top: 25px;
     position: relative;
+
 }
 .user-name {
     font-size: 21px;
     display: inline-block;
     vertical-align: top;
     padding-left: 46px;
-    padding-top:12px;
+    padding-top: 12px;
     padding-bottom: 10px;
     text-decoration: none;
     color:black;
     position: relative;
-}
 
+}
+.user-name:active {
+ color: #cacaca;   
+
+}
 .user-name::before {
     content:"";
     position: absolute;
-    background: url("../img/.icon-user-grey.png") no-repeat;
+    background: url("../img/sprite.png") -194px -302px no-repeat;
     top: 15px;
     left: 12px;
     width: 20px;
     height: 18px;
 
 }
+
 
 .user-name:hover::before {
     content:"";
     position: absolute;
-    background: url("../img/.icon-user.png") no-repeat;
+    background: url("../img/sprite.png") -134px -302px no-repeat;
     top: 15px;
     left: 12px;
     width: 20px;
     height: 18px;
+
 }
+.user-name:active::before {
+    content:"";
+    position: absolute;
+    background: url("../img/sprite.png") -194px -302px no-repeat;
+    top: 15px;
+    left: 12px;
+    width: 20px;
+    height: 18px;
+
+}
+
 
 .sign-out {
     position: absolute;
-    background: url("../img/.icon-logout.png") no-repeat;
+    background: url("../img/sprite.png") -261px -77px no-repeat;
     top: 15px;
     left: 267px;
     width: 21px;
@@ -1781,9 +1800,19 @@ label:hover {
 
 .sign-out:hover {
     position: absolute;
-    background: url("../img/.icon-logout-blue.png") no-repeat;
+    background: url("../img/sprite.png") -262px -134px no-repeat;
     top: 15px;
-    left: 265px;
+    left: 267px;
+    width: 21px;
+    height: 17px;
+
+}
+
+.sign-out:active {
+    position: absolute;
+    background: url("../img/sprite.png") -261px -77px no-repeat;
+    top: 15px;
+    left: 267px;
     width: 21px;
     height: 17px;
 
@@ -1819,6 +1848,15 @@ label:hover {
     font-size: 16px;
     color:#32425c;
 
+}
+.user-order:hover,
+.user-cabinet:hover {
+    color: #ee3643;
+
+}
+.user-order:active,
+.user-cabinet:active {
+ color: #cacaca; 
 }
 
 .breadcrumbs {
@@ -1859,7 +1897,7 @@ label:hover {
     left:-12px;
     width: 15px;
     height: 12px;
-    background: url("../img/.icon-home.png")no-repeat;
+    background: url("../img/sprite.png") -200px -83px no-repeat;
     display: inline-block;
     top:22px;
     
@@ -1872,34 +1910,26 @@ label:hover {
     left:-15px;
     width: 8px;
     height: 12px;
-    background: url("../img/.icon-right-l.png")no-repeat;
+    background: url("../img/sprite.png") -264px -250px no-repeat;
     display: inline-block;
     top:22px;
 
 }
-
-
-
 .breadcrumbs-1::after {
     content:"";
     position: absolute;
     left:80px;
     width: 8px;
     height: 12px;
-    background: url("../img/.icon-right-l.png")no-repeat;
+    background: url("../img/sprite.png") -264px -250px no-repeat;
     display: inline-block;
     top:22px;
-
 
 }
 
 .breadcrumbs-2 {
-
     padding-left:6px;
-
 }
-
-
 
 .breadcrumbs-2::after {
     content:"";
@@ -1907,10 +1937,9 @@ label:hover {
     left:116px;
     width: 8px;
     height: 12px;
-    background: url("../img/.icon-right-l.png")no-repeat;
+    background: url("../img/sprite.png") -264px -250px no-repeat;
     display: inline-block;
     top:22px;
-
 
 }
 
@@ -1971,7 +2000,7 @@ label:hover {
     padding-right: 0px;
     padding-left: 0px;
     margin-bottom: 8px;
-    border-radius: 5px;
+    border-radius:0px 0px 5px 5px;
     background: #f7f3ec;
  
   
@@ -2033,15 +2062,15 @@ label:hover {
     background:#f7f3ec;
     border: none;
     font-family: "PT Sans", 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     width: 75px;
-    padding: 8px 10px;
+    padding: 10px 10px;
     text-align: center;
     border-radius: 3px;
     float: left;
     margin-right: 10px;
     position: relative;
-
+    line-height:18px;
 }
 .right-field {
     margin-right: 0px;
@@ -2078,6 +2107,8 @@ label:hover {
    padding-top: 1px;
    padding-bottom: 0px;   
    margin-left: -1px;
+   margin-top:18px;
+   margin-bottom:16px;
 }
 
 .form-block label:hover {
@@ -2086,22 +2117,28 @@ label:hover {
 }
 .form-block {
     width: 220px;  
-    /*position:relative;*/
+
 }
 
 .brand-form-block {
     border-bottom: 1px solid #e5e5e5; 
     padding-bottom: 7px;
     padding-left: 0px;
-    
+    margin-bottom: 19px;
+
 }
+
+
 .brand-form-block label {
     margin-left: 32px;
     position: relative;
     cursor: pointer;
 }
 
-
+.brand-form-block li:nth-child(5) {
+    padding-top:3px;
+    margin-bottom: 13px;
+}
 
 .form-block li {
     list-style-type:none;
@@ -2109,9 +2146,9 @@ label:hover {
     font-family: "PT Sans";
     font-size: 15px;
     color:#000000;
-    width:150px;
+    width:160px;
     margin-bottom:15px;
-    /*position:relative;*/
+ 
 }
 
 
@@ -2122,7 +2159,7 @@ label:hover {
     left:-35px;
     width: 27px;
     height: 23px;
-    background:url("../img/.icon-check-off.png") no-repeat;
+    background:url("../img/sprite.png") -131px -20px no-repeat;
   
 }
 
@@ -2133,10 +2170,8 @@ label:hover {
 .input-form-block[type="checkbox"]:checked ~ label::before {
     width: 27px;
     height: 23px;
-    background:url("../img/.icon-check-on.png") no-repeat;
+    background:url("../img/sprite.png") -194px -20px no-repeat;
 }
-
-
 
 .input-show {
     font-size: 13px;
@@ -2146,15 +2181,18 @@ label:hover {
     width: 140px;
     text-transform:uppercase;
     vertical-align: top;
-    padding-top: 8px;
-    padding-bottom:8px;
-
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 3px;
+    line-height: 18px;
 }
 
 .power-form-block {
-    margin-bottom: 78px;
+    margin-bottom: 75px;
     padding-left: 0px;
+    
 }
+
 .power-form-block label {
     position: relative;
     cursor: pointer;
@@ -2169,21 +2207,18 @@ label:hover {
     position: absolute;
     top: 0px;
     left:-35px;
-    /*z-index: 1;*/
     width: 25px;
     height: 25px;
-    background:url("../img/.icon-circle.png") no-repeat;
+    background:url("../img/sprite.png") -20px -83px no-repeat;
   
 }
 .input-power[type="radio"]:checked ~ label::before {
  
     width: 25px;
     height: 25px;
-    background:url("../img/.icon-circle-dot.png") no-repeat;
+    background:url("../img/sprite.png") -85px -83px no-repeat;
+
 }
-
-
-
 .right-column {
     float:right;
     background: #f7f3ec;
@@ -2192,8 +2227,8 @@ label:hover {
     text-transform: uppercase;
     width: 700px;   
     margin-top:-3px;
-    margin-bottom: 20px;
-    /*clear: "both";*/
+    margin-bottom: 21px;
+   
 }
 
 .items-sort li {
@@ -2284,19 +2319,16 @@ label:hover {
     position: relative;
     
     }
- 
-.item-sort:hover {
- border-bottom: 1px solid #ee3643 ;   
- color: black;
-}
+ .item-sort:hover {
+    border-bottom: 1px solid #ee3643;   
+    color: black;
 
+}
 .item-sort:active {
- border-bottom: none;   
- color: #ee3643;
+    border-bottom: none;   
+    color: #ee3643;
+
 }
-
-
-
 .items-sort {
     padding-left: 0px;
     margin-top: 7px;
@@ -2348,14 +2380,14 @@ label:hover {
 .decor-down:hover::before,
 .decor-up:hover::before {
 
-border-color: #000000 transparent;    
+    border-color: #000000 transparent;    
 
 }
 
 .decor-down:active::before,
 .decor-up:active::before {
 
-border-color: #ee3643 transparent;    
+    border-color: #ee3643 transparent;    
 
 }
 
