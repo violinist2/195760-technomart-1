@@ -1493,10 +1493,7 @@ label:hover {
     background-position: -139px -215px;
 
 }
-
-
 /*footer*/
-
 .blue-back {
     background: #32425c;
     margin-bottom: 14px;
@@ -1525,8 +1522,6 @@ label:hover {
     margin: 0px;
 
 }
-
-
 
 .footer-contacts {
     font-size: 18px;
@@ -1573,6 +1568,7 @@ label:hover {
     color:white;
 
 }
+
 .low-list-1 a:active {
     color:#9ea5af;
     text-decoration:none;
@@ -1649,15 +1645,19 @@ label:hover {
     background: #ee3643 url("../img/sprite.png") -244px -287px no-repeat;
  
 }
+
 .sprite-icon-facebook {
     background: #212a3a url("../img/sprite.png") -134px -73px no-repeat;
 }
+
 .sprite-icon-facebook:hover {
     background: #ee3643 url("../img/sprite.png") -134px -73px no-repeat;
 }
+
 .sprite-icon-instagramm {
     background: #212a3a url("../img/sprite.png") -69px -204px no-repeat;
 }
+
 .sprite-icon-instagramm:hover {
     background: #ee3643 url("../img/sprite.png") -69px -204px no-repeat;
 }
@@ -1734,6 +1734,7 @@ label:hover {
 .user-registration {
     display: none;
 }
+
 .user {
     width: 299px;
     background:white;
@@ -1741,6 +1742,7 @@ label:hover {
     position: relative;
 
 }
+
 .user-name {
     font-size: 21px;
     display: inline-block;
@@ -1754,7 +1756,7 @@ label:hover {
 
 }
 .user-name:active {
- color: #cacaca;   
+    color: #cacaca;   
 
 }
 .user-name::before {
@@ -1846,16 +1848,19 @@ label:hover {
     left:89px;
 
 }
+
 .user-cabinet {
     font-size: 16px;
     color:#32425c;
 
 }
+
 .user-order:hover,
 .user-cabinet:hover {
     color: #ee3643;
 
 }
+
 .user-order:active,
 .user-cabinet:active {
     color: #cacaca; 
@@ -1873,13 +1878,13 @@ label:hover {
     font-size: 13px;
     font-family: "PT Sans";
     text-transform:uppercase;
-    padding-top:17px;
-    padding-bottom: 19px;
+    padding-top:20px;
+    padding-bottom: 21px;
     padding-left:13px;
     float: left;
     padding-right: 20px;
     list-style-type:none;
-    
+    line-height: 18px;
 }
 .house {
     padding-left:0px;
@@ -2005,8 +2010,7 @@ label:hover {
     border-radius:0px 0px 5px 5px;
     background: #f7f3ec;
  
-  
-}
+  }
 
 .scale::after {
     content:"";
@@ -2019,7 +2023,7 @@ label:hover {
     width: 180px;
     display: inline-block;
 
-}
+  }
 
 .bar {
    position: absolute;
@@ -2029,7 +2033,8 @@ label:hover {
    left:20px;
    width: 147px;
    z-index: 200;
-}
+  
+  }
 
 .toggle {
     position: absolute;
@@ -2043,7 +2048,8 @@ label:hover {
     background: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     z-index: 300;
-}
+    
+    }
 
 .toggle-min {
     left: 19px;
@@ -2057,6 +2063,7 @@ label:hover {
     border-bottom: 1px solid #e5e5e5;
     width: 220px;
     padding-bottom: 25px;
+
 }
 
 
@@ -2073,7 +2080,9 @@ label:hover {
     margin-right: 10px;
     position: relative;
     line-height:18px;
+
 }
+
 .right-field {
     margin-right: 0px;
     float: right;
@@ -2111,12 +2120,14 @@ label:hover {
    margin-left: -1px;
    margin-top:18px;
    margin-bottom:16px;
+
 }
 
 .form-block label:hover {
     background:white;
    
 }
+
 .form-block {
     width: 220px;  
 
@@ -2173,6 +2184,7 @@ label:hover {
     width: 27px;
     height: 23px;
     background:url("../img/sprite.png") -194px -20px no-repeat;
+
 }
 
 .input-show {
@@ -2187,6 +2199,7 @@ label:hover {
     padding-bottom: 9px;
     border-radius: 3px;
     line-height: 18px;
+
 }
 
 .power-form-block {
@@ -2199,11 +2212,14 @@ label:hover {
     position: relative;
     cursor: pointer;
     margin-left: 32px;
+    
     }
 
 .input-power[type="radio"] {
     display: none;
+
 } 
+
 .power-label::before {
     content: "";
     position: absolute;
@@ -2214,6 +2230,7 @@ label:hover {
     background:url("../img/sprite.png") -20px -83px no-repeat;
   
 }
+
 .input-power[type="radio"]:checked ~ label::before {
  
     width: 25px;
@@ -2221,6 +2238,7 @@ label:hover {
     background:url("../img/sprite.png") -85px -83px no-repeat;
 
 }
+
 .right-column {
     float:right;
     background: #f7f3ec;
@@ -2229,12 +2247,12 @@ label:hover {
     text-transform: uppercase;
     width: 700px;   
     margin-top:-3px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
    
 }
 
 .items-sort li {
-
+    line-height: 18px;
     display: inline-block;   
 
 }
@@ -2268,7 +2286,6 @@ label:hover {
     
 }
 
-
 .item-title-4 {
     min-height: 40px;
     padding: 0 20px;
@@ -2277,7 +2294,9 @@ label:hover {
     font-size: 18px;
     font-family: "PT Sans";
     font-weight: bold;
+
 }
+
 .item-title-flag {
     
     min-height: 40px;
@@ -2287,17 +2306,19 @@ label:hover {
     margin-top:13px;
     margin-bottom: 8px;
     padding: 0 20px;
-}
 
+}
 
 .scale {
     padding: 0px;
     width: 220px;
+
 }
 
 .goods .item:nth-child(4) {
     width: 218px;
     margin-right: 19px;
+
 }
 
 .word-sort {
@@ -2321,16 +2342,19 @@ label:hover {
     position: relative;
     
     }
+ 
  .item-sort:hover {
     border-bottom: 1px solid #ee3643;   
     color: black;
 
 }
+
 .item-sort:active {
     border-bottom: none;   
     color: #ee3643;
 
 }
+
 .items-sort {
     padding-left: 0px;
     margin-top: 7px;
@@ -2348,17 +2372,20 @@ label:hover {
 .item-sort:nth-child(5) {
    margin-right:0px;
    width: 10;
+
 }
 
 .item-sort:nth-child(6) {
    margin-right:0px;
    width: 10;
+
 }
+
 .decor-up::before {
   content: "";
   position: absolute;
   left:-23px;
-  top:-10px;
+  top:-7px;
   border-style: solid;
   border-width: 0 5px 10px 5px;
   border-color: #ee3643 transparent;
@@ -2370,7 +2397,7 @@ label:hover {
   content: "";
   position: absolute;
   left:6px;
-  top:-10px;
+  top:-7px;
   border-style: solid;
   border-width: 10px 5px 0 5px;
   border-color: #c6c2bd transparent;
@@ -2396,6 +2423,7 @@ label:hover {
 .paginator {
    margin-top: 30px;
    margin-bottom: 61px;
+
 }
 
 .paginator a {
@@ -2414,13 +2442,14 @@ label:hover {
     text-transform:uppercase;
     margin-right: 7.3px;
     color:black;
-    /*padding-left: 2px;*/
+    
 }
 
 .paginator .current {
     background: #ee3643;
     color: #ffffff;
     border-color: #ee3643;
+
 }
 
 
@@ -2437,11 +2466,13 @@ label:hover {
 
 .paginator a:active {
     border-color: #ee3643;
+
 }
 
 .about {
     padding-bottom:57px;
     background:#f2f6f8;  
+
 }
 
 .about-title {
@@ -2468,7 +2499,7 @@ label:hover {
     width: 620px;
     background-color: #ffffff;
     border-top: 7px solid #ee3643;
-    box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+    box-shadow: 0 20px 40px 0 #767d8b;
     display: none;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -2486,6 +2517,7 @@ label:hover {
     border: 0;
     cursor: pointer;
     z-index: 50000;
+
 } 
 
 .pop-up-basket-close::before,
@@ -2554,13 +2586,13 @@ label:hover {
 
 }
 
-
 .order {
     float: left;
     margin-left: 80px;
     width: 220px;
     margin-top: 36px;
     margin-bottom: 36px;
+
 }
 
 .continue {
@@ -2571,6 +2603,7 @@ label:hover {
     color: black;
     margin-top: 36px;
     margin-bottom: 36px;
+
 }
 
 .pop-up-letter {
@@ -2582,7 +2615,7 @@ label:hover {
     z-index: 2000;
     background-color: #ffffff;
     border-top: 7px solid #ee3643;
-    box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+    box-shadow: 0 20px 40px 0 #747b89;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-bottom: 112px solid #f1f1f1;
@@ -2596,8 +2629,8 @@ label:hover {
     margin-top:49px;
     margin-bottom:10px;
     line-height:18px;
-}
 
+}
 
 .pop-up-letter input {
     width: 220px;
@@ -2614,6 +2647,7 @@ label:hover {
     color:#999999;
     font-size: 13px;
     line-height: 18px;
+
 }
 
 .email-field {
@@ -2624,6 +2658,7 @@ label:hover {
     margin-bottom: 20px;
     margin-left: 20px;
     border-radius:3px;
+
 }
 
 .name-field {
@@ -2633,6 +2668,7 @@ label:hover {
     margin-bottom: 20px;
     border-radius:3px;
     box-sizing: border-box;
+
 }
 
 .pop-up-letter label:hover {
@@ -2653,6 +2689,7 @@ label:hover {
     font-family: "PT Sans";
     font-size: 13px;
     line-height: 18px;
+
 }
 
 .letter-text {
@@ -2660,6 +2697,7 @@ label:hover {
     clear:both;
     margin-bottom:38px;
     margin-left: 80px;
+
 }
 
 .pop-up-btn {
@@ -2696,4 +2734,7 @@ label:hover {
 .modal-content-show {
   display: block;
   
+}
+.modal-content-show-2 {
+  display: block;  
 }
