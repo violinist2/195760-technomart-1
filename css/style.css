@@ -450,8 +450,8 @@ basket:hover {
     color: white;
     display: block;
     text-decoration: none;
-    padding: 16px 0px 15px 0px;
-   
+    padding: 19px 0px 19px 0px;
+    line-height: 17px;
 }
 
 .nav-menu li:nth-child(1) {
@@ -501,7 +501,7 @@ basket:hover {
 
 .content-block-a {
     width: 300px;
-    height: 123px;
+    min-height: 123px;
     float: left;
     color: white;
     background: #f6b22d;
@@ -621,7 +621,7 @@ basket:hover {
 .color-links {
     font-size: 14px;
     width: 135px;
-    height: 30px;
+    line-height: 38px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -630,9 +630,10 @@ basket:hover {
     text-transform: uppercase;
     margin-left: 24px;
     margin-top: 5px;
-    padding-top: 8px;
+    /*padding-top: 8px;*/
     margin-bottom: 0px;
     border-radius: 2px;
+    box-sizing: border-box;
     
 }  
 
@@ -727,7 +728,7 @@ basket:hover {
 .btn-feedback:hover,
 .credit-a:hover
  {
-   background:#ca2c37;
+    background:#ca2c37;
 
 }
 .open-catalog:active, 
@@ -977,7 +978,6 @@ span.right {
     border: 3px solid #5fbb2d;
     border-bottom-color: #367315;
 }
-
 .item .actions .buy:hover::before {
     opacity:1;
     
@@ -1010,8 +1010,8 @@ span.right {
 
 .item .actions {
     display: none;
-}
 
+}
 .item:hover .actions {
     display: block;
 }
@@ -1080,7 +1080,8 @@ span.right {
     background: #f7f3ec;
     margin-top: 0px;
     margin-bottom: 22px;
-    min-height: 89px;
+    height: 89px;
+   
 }
 
 .main-pop-products {
@@ -1090,7 +1091,8 @@ span.right {
     font-weight: lighter;
     float: left;
     margin-left: 26px;
-    padding-top: 8px;
+    padding-top: 6px;
+    line-height: 30px;
 }
 
 .link-main-pop-products {
@@ -1232,7 +1234,7 @@ span.right {
     height: 10px;
     margin-left: 100px;
     text-align: center;
-    z-index: 1000;
+    z-index: 100;
     display: block;
 }
 
@@ -1856,13 +1858,13 @@ label:hover {
 }
 .user-order:active,
 .user-cabinet:active {
- color: #cacaca; 
+    color: #cacaca; 
 }
 
 .breadcrumbs {
     margin: 0px;
     padding-left: 10px;
-  
+    
 }
 
 .breadcrumbs li {
@@ -1877,7 +1879,7 @@ label:hover {
     float: left;
     padding-right: 20px;
     list-style-type:none;
-
+    
 }
 .house {
     padding-left:0px;
@@ -2483,7 +2485,7 @@ label:hover {
     background-color:white;
     border: 0;
     cursor: pointer;
-
+    z-index: 50000;
 } 
 
 .pop-up-basket-close::before,
@@ -2669,4 +2671,29 @@ label:hover {
     position: absolute;
     top:380px;
     left:80px;
+}
+
+.modal-content-map {
+    width: 940px;
+    height: 476;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    display: none; 
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.7);
+    z-index: 500;
+
+}
+
+.map-close {
+    background-color:transparent;
+ 
+}
+
+.modal-content-show {
+  display: block;
+  
 }
