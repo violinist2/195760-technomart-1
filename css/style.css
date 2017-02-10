@@ -2735,6 +2735,15 @@ label:hover {
   display: block;
   
 }
+
 .modal-content-show-2 {
   display: block;  
+  animation: bounce 0.9s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateX(-900px);
+  
+  }
 }
