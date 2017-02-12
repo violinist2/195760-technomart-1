@@ -768,6 +768,12 @@ basket:hover {
     cursor: pointer;
 }
 
+.slider-controls label:hover {
+
+ background: white;   
+}
+
+
 #botn-1:checked~.slider-controls label[for="botn-1"],
 #botn-2:checked~.slider-controls label[for="botn-2"] {
     background: #ee3643;
@@ -2741,8 +2747,12 @@ label:hover {
   animation: bounce 0.9s;
 }
 
+.modal-content-show-3 {
+  display: block;  
+}
+
 @keyframes bounce {
-  0%   {
+  0%  {
     transform: translateX(-900px);
   
   }
