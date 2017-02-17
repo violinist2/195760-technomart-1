@@ -21,8 +21,8 @@
             buyPopUp.classList.remove("modal-content-show-3");
           }
         }
-      }); 
- 
+      });
+
       var mapOpen = document.querySelector(".js-open-map");
       var mapPopup = document.querySelector(".modal-content-map");
       var mapClose = mapPopup.querySelector(".map-close");
@@ -71,13 +71,13 @@
 
 
       if (window.localStorage) {
-        var elements = document.querySelectorAll('[name]');
+        var elements = document.querySelectorAll("[name]");
 
         for (var i = 0, length = elements.length; i < length; i++) {
           (function (element) {
-            var name = element.getAttribute('name');
+            var name = element.getAttribute("name");
 
-            element.value = localStorage.getItem(name) || '';
+            element.value = localStorage.getItem(name) || "";
 
             element.onkeyup = function () {
               localStorage.setItem(name, element.value);
@@ -85,4 +85,3 @@
           })(elements[i]);
         }
       }
-
